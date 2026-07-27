@@ -27,7 +27,7 @@
     </properties>
 
     <dependencies>
-        <!-- 无外部依赖，仅 JDK 内置库 -->
+        <!-- 外部依赖定义在各子模块 pom.xml 中 -->
     </dependencies>
 
     <build>
