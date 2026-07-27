@@ -1,0 +1,24 @@
+# 编译产物
+target/
+out/
+build/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# 版本管理
+.git/
+.gitignore
+
+# 本地配置
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# 文档（非运行必须）
+README.md
+OPTIMIZATION_RECORD.md

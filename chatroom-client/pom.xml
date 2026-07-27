@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>chatroom</groupId>
+        <artifactId>Chatroom</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>chatroom-client</artifactId>
+    <packaging>jar</packaging>
+    <name>Chatroom - Client 客户端</name>
+    <description>客户端 UI、业务逻辑、网络通信</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>chatroom</groupId>
+            <artifactId>chatroom-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.3.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>chatroom.client.ui.ClientChatMain</mainClass>
+                            <addClasspath>true</addClasspath>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
